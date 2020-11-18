@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { 
             agent {
                 docker {
-                    image 'scys/pyinstaller' 
+                    image 'python:2-alpine' 
                 }
             }
             steps {
